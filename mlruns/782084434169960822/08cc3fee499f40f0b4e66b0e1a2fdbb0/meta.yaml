@@ -1,0 +1,14 @@
+artifact_uri: file:C:/Users/green/OneDrive/Desktop/Network_project/NetworkSecurity/mlruns/08cc3fee499f40f0b4e66b0e1a2fdbb0/artifacts
+end_time: 1786533746466
+entry_point_name: ''
+experiment_id: '782084434169960822'
+lifecycle_stage: active
+run_id: 08cc3fee499f40f0b4e66b0e1a2fdbb0
+run_name: NetworkSecurity_Classification
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1786533730931
+status: 3
+tags: []
+user_id: green

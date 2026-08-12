@@ -1,0 +1,9 @@
+artifact_location: file:C:/Users/green/OneDrive/Desktop/Network_project/NetworkSecurity/mlruns
+creation_time: 1786533730132
+effective_trace_archival_retention: null
+experiment_id: '782084434169960822'
+last_update_time: 1786533730132
+lifecycle_stage: active
+name: NetworkSecurity
+trace_location: null
+workspace: default

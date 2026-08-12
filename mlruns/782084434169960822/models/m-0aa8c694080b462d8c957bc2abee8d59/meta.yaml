@@ -1,0 +1,10 @@
+artifact_location: file:C:/Users/green/OneDrive/Desktop/Network_project/NetworkSecurity/mlruns/models/m-0aa8c694080b462d8c957bc2abee8d59/artifacts
+creation_timestamp: 1786533746702
+experiment_id: '782084434169960822'
+last_updated_timestamp: 1786533755371
+model_id: m-0aa8c694080b462d8c957bc2abee8d59
+model_type: null
+name: model
+source_run_id: f6ac19257a2c46ecbda5c3cdb7a84f4d
+status: 2
+status_message: null
