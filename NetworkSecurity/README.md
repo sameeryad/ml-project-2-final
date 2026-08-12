@@ -1,12 +1,12 @@
 # Network Security ML Project
 
-This repository contains a Machine Learning pipeline for Network Security, including data ingestion, validation, transformation, model training, and MLflow experiment tracking.
+This repository contains a Machine Learning pipeline for Network Security, including data ingestion, validation, transformation, and model training.
 
 ## Overview
 - **Data Ingestion**: Fetches network data from MongoDB or local CSV fallback.
-- **Data Validation**: Checks data schema, column types, and data drift using Evidently AI.
+- **Data Validation**: Checks data schema, column types, and data drift.
 - **Data Transformation**: Preprocesses numeric data and handles missing values.
-- **Model Trainer**: Trains classification models (Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, AdaBoost) and tracks metrics using MLflow / DagsHub.
+- **Model Trainer**: Trains classification models (Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, AdaBoost) and selects the best model based on metrics.
 
 ## Setup Instructions
 
