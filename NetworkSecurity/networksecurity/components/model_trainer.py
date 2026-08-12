@@ -49,6 +49,7 @@ class ModelTrainer:
         
     def track_mlflow(self,best_model,classificationmetric):
         tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "https://dagshub.com/sameer/networksecurity.mlflow")
+        mlflow.set_tracking_uri(tracking_uri)
         mlflow.set_registry_uri(tracking_uri)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         with mlflow.start_run():
@@ -65,7 +66,7 @@ class ModelTrainer:
             if tracking_url_type_store != "file":
 
                 # Register the model
-                mlflow.sklearn.log_model(best_model, "model", registered_model_name=best_model)
+                mlflow.sklearn.log_model(best_model, "model", registered_model_name=best_model.__class__.__name__)
             else:
                 mlflow.sklearn.log_model(best_model, "model")
 
