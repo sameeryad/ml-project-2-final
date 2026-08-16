@@ -1,27 +1,98 @@
+Sure — here’s the **short README version**:
+
 # Network Security ML Project
 
-This repository contains a Machine Learning pipeline for Network Security, including data ingestion, validation, transformation, and model training.
+An end-to-end Machine Learning project for detecting phishing/network security threats.
 
-## Overview
-- **Data Ingestion**: Fetches network data from MongoDB or local CSV fallback.
-- **Data Validation**: Checks data schema, column types, and data drift.
-- **Data Transformation**: Preprocesses numeric data and handles missing values.
-- **Model Trainer**: Trains classification models (Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, AdaBoost) and selects the best model based on metrics.
+## 🔄 Pipeline
 
-## Setup Instructions
+```text
+MongoDB
+   ↓
+Data Ingestion
+   ↓
+Data Validation + Drift Detection
+   ↓
+Data Transformation
+   ↓
+Model Training + Hyperparameter Tuning
+   ↓
+Best Model
+   ↓
+FastAPI Prediction
+```
 
-1. **Environment Setup**
-   Copy `.env.example` to `.env` and fill in your credentials:
-   ```bash
-   cp .env.example .env
-   ```
+## 🛠️ Technologies
 
-2. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+* Python
+* Pandas / NumPy
+* Scikit-learn
+* MongoDB
+* MLflow / DagsHub
+* FastAPI
+* Docker
+* AWS S3 / ECR / EC2
+* GitHub Actions
 
-3. **Run Pipeline**
-   ```bash
-   python main.py
-   ```
+## 🤖 Models
+
+* Random Forest
+* Decision Tree
+* Gradient Boosting
+* Logistic Regression
+* AdaBoost
+
+The best model is selected based on evaluation results.
+
+## 📊 Evaluation
+
+* F1 Score
+* Precision
+* Recall
+
+## 🚀 Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run training:
+
+```bash
+python main.py
+```
+
+Run API:
+
+```bash
+python app.py
+```
+
+API documentation:
+
+```text
+http://localhost:8000/docs
+```
+
+## 📁 Main Components
+
+```text
+components/
+├── data_ingestion.py
+├── data_validation.py
+├── data_transformation.py
+└── model_trainer.py
+
+pipeline/
+└── training_pipeline.py
+
+app.py
+main.py
+Dockerfile
+```
+
+**One-line summary:**
+
+> A modular end-to-end ML pipeline that ingests, validates, transforms, trains, evaluates, and serves a network-security classification model.
