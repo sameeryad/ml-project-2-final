@@ -1,4 +1,4 @@
-Sure — here’s the **short README version**:
+
 
 # Network Security ML Project
 
